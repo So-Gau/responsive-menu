@@ -41,6 +41,8 @@ body {
 #navigationMobile ul li {
     list-style: none;
     margin-bottom: 30px;
+    padding: 5px;
+    transition: all 100ms;
 }
 
 #navigationMobile ul li a {
@@ -52,15 +54,17 @@ body {
     cursor: pointer;
 }
 
-#navigationMobile ul li a:hover {
-    color: #21670a;
+#navigationMobile ul li:hover:nth-child(odd) {
+    background: #f3bdca;
 }
-
+#navigationMobile ul li:hover:nth-child(even) {
+    background: #82727e;
+}
     /* ------------------- ANIMATE CLOSE ICON---------------------*/
     /* style CSS icon */
-
-#nav-icon3 {
-    width: 37px;
+    
+    #nav-icon3 {
+        width: 37px;
     height: 30px;
     top: 15px;
     right: 10px;
