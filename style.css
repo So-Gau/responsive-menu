@@ -140,4 +140,25 @@ body {
 }
 
     /* ------------------- END ANIMATE CLOSE ICON---------------------*/
+
+ @media screen and (min-width: 390px) {
+    .logo {
+        width: 70px;
+    }
+
+    #navigationMobile ul li a {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .logo {
+        width: 95px;
+    }
+
+    #navigationMobile ul li a {
+        font-size: 35px;
+    }
+}
+
 /* --------------------------END menu mobile--------------------------- */
