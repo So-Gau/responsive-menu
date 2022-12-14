@@ -58,7 +58,7 @@ body {
     background: #f3bdca;
 }
 #navigationMobile ul li:hover:nth-child(even) {
-    background: #82727e;
+    background: #eb859e;
 }
     /* ------------------- ANIMATE CLOSE ICON---------------------*/
     /* style CSS icon */
@@ -160,5 +160,70 @@ body {
         font-size: 35px;
     }
 }
-
 /* --------------------------END menu mobile--------------------------- */
+
+@media screen and (min-width: 1280px) {
+    .menu {
+        background: url(/images/flowers.webp);
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        height: 105px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    }
+    .menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 90px;
+        position: unset;
+    }
+
+    /* menu nav */
+
+    #navigationMobile {
+        position: unset;
+        width: unset;
+        height: unset;
+        left: unset;
+        background: unset;
+        transition: unset;
+    }
+
+    #navigationMobile.open {
+      display: none;
+    }
+    #navigationMobile ul {
+       display: flex;
+    }
+
+    #navigationMobile ul li {
+        margin-bottom: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 20px 20px;
+        transition: all 500ms;
+        background: #fee0be;
+        border: 2px solid #354535;
+    }
+
+    #navigationMobile ul li:hover:nth-child(odd) {
+        transition: all 500ms;
+    }
+    #navigationMobile ul li:hover:nth-child(even) {
+        transition: all 500ms;
+    }
+
+    #navigationMobile ul li a {
+        font-size: 20px;
+        color: #354535;
+    }  
+    #nav-icon3 {
+      display: none;
+    }
+}    
